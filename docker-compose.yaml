@@ -5,12 +5,14 @@ services:
     container_name: serv-server
     restart: always
     ports:
-      - "9091:9090" #Default Is 9090
+      - "9090:9090" #Default Is 9090
   serv:
-    image: efalrk/serv:latest
+    image: efalrk/serv:latest #Change If You Custom Port Server
     container_name: serv
     restart: always
     env_file:
       - .env
+    volumes:
+      - .env:/app/.env
     ports:
       - "3298:4173" #Default Is 3298
