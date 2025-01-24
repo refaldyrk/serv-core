@@ -1,0 +1,16 @@
+version: '3'
+services:
+  serv-server:
+    image: efalrk/serv-server:latest
+    container_name: serv-server
+    restart: always
+    ports:
+      - "9091:9090" #Default Is 9090
+  serv:
+    image: efalrk/serv:latest
+    container_name: serv
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3298:4173" #Default Is 3298
