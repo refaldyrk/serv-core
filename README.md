@@ -4,6 +4,10 @@ SERV adalah aplikasi berbasis web yang memungkinkan kamu memonitoring server sec
 
 ---
 
+# Demo
+![img.png](image/img.png)
+![img.png](image/detail.png)
+
 ## Tech Stack
 **Backend:**
 - Golang
